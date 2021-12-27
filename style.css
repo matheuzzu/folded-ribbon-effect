@@ -1,0 +1,38 @@
+.container {
+    width: 150px;
+    height: 150px;
+    background-color: #dadada;
+    font-family: sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    background: rgb(30, 172, 153);
+    right: -18px;
+    top: 8px;
+    padding: 7px 15px;
+    color: #dadada;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+
+.label::after {
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    right: 0;
+    
+
+    border-style: solid;
+    border-top-width: 4px;
+    border-left-width: 9px;
+    border-bottom-width: 4px;
+    border-right-width: 9px;
+    border-top-color: rgb(30, 172, 153);
+    border-left-color: rgb(30, 172, 153);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    filter: brightness(60%);
+}
